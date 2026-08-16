@@ -4,19 +4,15 @@
   <img src="assets/logo.png" alt="Eyecan Logo" width="180">
 </p>
 
-<h1 align="center">
-Eyecan
-</h1>
+<h1 align="center">Eyecan</h1>
 
 <p align="center">
-A browser-based assistive technology prototype exploring alternative ways of communication
-through gaze interaction, speech recognition, suggested responses, and voice output.
+  A browser-based assistive technology prototype exploring alternative communication
+  through gaze interaction, speech recognition, suggested responses, and voice output.
 </p>
 
 <p align="center">
-
-👁️ Gaze Interaction • 🎙️ Speech Recognition • 💬 Suggested Responses • 🔊 Voice Output • 🌐 Arabic & English
-
+  👁️ Gaze Interaction • 🎙️ Speech Recognition • 💬 Suggested Responses • 🔊 Voice Output • 🌐 Arabic & English
 </p>
 
 ---
@@ -25,206 +21,201 @@ through gaze interaction, speech recognition, suggested responses, and voice out
 
 Eyecan is a **prototype**, not a complete or production-ready product.
 
-The current version demonstrates the concept, interface, and interaction flow
-through a browser-based interactive experience.
+The current version demonstrates the concept, interface, and interaction flow through a browser-based interactive experience.
 
-Some interactions are simulated, such as using the mouse to represent eye gaze,
-and some features depend on the capabilities of the user's browser and device.
+Some interactions are simulated, such as using the mouse to represent eye gaze, while other features depend on the capabilities of the user's browser and device.
 
-The purpose of this prototype is to demonstrate the feasibility and direction
-of the concept and how it could be developed into a complete assistive
-technology product in the future.
+The purpose of this prototype is to demonstrate the feasibility and direction of the concept and provide a foundation for future development into a complete assistive technology solution.
 
 ---
 
 # 📖 Overview
 
-Eyecan is a smart-glasses concept designed to explore alternative communication
-methods for people who may have difficulty speaking or moving while remaining
-conscious and able to communicate.
+Eyecan is a smart-glasses concept designed to explore alternative communication methods for people who may have difficulty speaking or physically interacting with conventional interfaces while remaining conscious and able to communicate.
 
-The prototype focuses on providing a simple and accessible communication
-experience through:
+The prototype combines gaze interaction, speech recognition, suggested responses, and voice output into a simple browser-based communication experience.
 
-- Eye-gaze interaction simulation
-- Browser-based speech recognition
-- Suggested responses
-- Browser-based text-to-speech
-- Arabic and English interface support
-- Adjustable interaction settings
+The current prototype focuses on:
 
-The current implementation is a **Front-End prototype** and does not require
-a backend server to run.
+* Eye-gaze interaction simulation
+* Browser-based speech recognition
+* Suggested responses
+* Browser-based text-to-speech
+* Arabic and English interface support
+* Adjustable interaction settings
+
+The current implementation is a **Front-End prototype** and does not require a backend server to run.
 
 ---
 
 # ✨ Key Features
 
-- 👁️ **Gaze Interaction Simulation**
-  - Mouse interaction is used to simulate eye gaze and dwell time.
+* 👁️ **Gaze Interaction Simulation**
 
-- 🎙️ **Speech Recognition**
-  - Converts spoken input into text using browser capabilities.
+  * Uses mouse interaction to simulate eye gaze and dwell time.
 
-- 💬 **Suggested Responses**
-  - Provides contextual response options to simplify communication.
+* 🎙️ **Speech Recognition**
 
-- 🔊 **Text-to-Speech**
-  - Converts selected text into spoken audio using browser/device voices.
+  * Converts spoken input into text using browser capabilities.
 
-- 🌐 **Arabic & English Support**
-  - The interface supports both Arabic and English.
+* 💬 **Suggested Responses**
 
-- ⚙️ **Adjustable Interaction**
-  - Users can configure interaction settings such as dwell time and voice type.
+  * Provides contextual response options to simplify communication.
 
-- 🖥️ **Browser-Based Prototype**
-  - The current prototype runs directly in the browser without a backend server.
+* 🔊 **Text-to-Speech**
 
----
+  * Converts selected text into spoken audio using browser/device voices.
 
-# 📸 Screenshots
+* 🌐 **Arabic & English Support**
 
-The screenshots below provide an overview of the prototype without requiring
-the project to be installed or run.
+  * Provides an interface supporting both Arabic and English.
 
-## Home Page
+* ⚙️ **Adjustable Interaction**
 
-<p align="center">
-  <img src="assets/screenshots/home.png" width="900" alt="Eyecan Home Page">
-</p>
+  * Allows interaction settings such as dwell time and voice type to be adjusted.
 
-The home page introduces the Eyecan concept, its purpose, features,
-technologies, and future vision.
+* 🖥️ **Browser-Based Prototype**
+
+  * Runs directly in a modern web browser without requiring a backend server.
 
 ---
 
-## Smart Glasses Simulation
-
-<p align="center">
-  <img src="assets/screenshots/simulation.png" width="900" alt="Eyecan Simulation">
-</p>
-
-The simulation demonstrates the interaction experience, including microphone
-input, speech recognition, suggested responses, and browser-based voice output.
-
----
 # 🔄 Prototype Workflow
 
 The current prototype demonstrates the following interaction flow:
 
-1. The user opens the Eyecan prototype.
-2. The user enters the Smart Glasses Simulation.
-3. The user can interact with interface elements using mouse-based gaze simulation.
-4. The user activates the microphone.
-5. The browser listens for speech.
-6. Speech is converted into text.
-7. Suggested responses are displayed.
-8. The user can select a suggested response.
-9. The selected response can be converted into spoken audio using the browser.
-10. The user can adjust interaction settings such as dwell time and voice type.
+```text
+Open Eyecan
+     ↓
+Enter Smart Glasses Simulation
+     ↓
+Interact using Mouse-Based Gaze Simulation
+     ↓
+Activate Microphone
+     ↓
+Speech Recognition
+     ↓
+Convert Speech to Text
+     ↓
+Display Suggested Responses
+     ↓
+Select a Response
+     ↓
+Convert Text to Speech
+     ↓
+Adjust Interaction Settings
+```
+
+This workflow demonstrates how the current browser-based prototype could evolve into a real assistive communication system using physical eye-tracking hardware and additional intelligent services.
 
 ---
 
 # 🛠️ Technologies Used
 
-## Web & Interaction
+## Front-End
 
-- **Eye Tracking / Gaze Interaction**
-  - Mouse-based simulation of gaze and dwell time.
+* HTML
+* CSS
+* JavaScript
+* React
+* TypeScript / TSX
+* Vite
+* Tailwind CSS
 
-- **Browser Speech Recognition**
-  - Speech-to-text using browser capabilities.
+## Interaction & Web APIs
 
-- **Browser-Based Interaction**
-  - Direct interaction and response inside the browser.
+* Browser-based gaze simulation
+* Mouse hover and dwell interaction
+* Web Speech API
+* Speech Recognition
+* Speech Synthesis
 
----
+## Voice & Audio
 
-## 🔊 Voice & Audio
+The prototype uses browser and device speech capabilities for:
 
-- **Web Speech API**
-- **Speech Recognition**
-- **Speech Synthesis**
+* Speech-to-text
+* Text-to-speech
+* Voice selection
 
-These capabilities are provided by the browser and device.
-
-Voice availability may differ depending on the browser, operating system,
-and installed voices.
-
----
-
-## 💻 Development
-
-- HTML
-- CSS
-- JavaScript
-- React
-- TypeScript / TSX
-- Web APIs
+Voice availability may differ depending on the browser, operating system, installed voices, and device configuration.
 
 ---
 
 # 🔮 Future Vision
 
-The following technologies represent a possible architecture for developing
-Eyecan into a complete real-world product.
+The following technologies represent a possible architecture for developing Eyecan into a complete real-world assistive technology product.
 
-These technologies are **future development possibilities** and are not claimed
-to be implemented in the current prototype.
+> These technologies are **future development possibilities** and are not claimed to be fully implemented in the current prototype.
 
-## Frontend
+## 👓 Real Eye Tracking
 
-### React / React Native + TypeScript
+Future versions could replace the current mouse-based simulation with real eye-tracking hardware integrated into smart glasses.
 
-A future production frontend could provide:
+Possible capabilities include:
 
-- Smart-glasses interaction
-- Companion mobile application
-- Accessibility settings
-- User preferences
-- Voice interaction
-- Gaze interaction
+* Real-time eye tracking
+* Gaze detection
+* Dwell-based selection
+* Hands-free interface interaction
+* Calibration and personalization
 
 ---
 
-## Backend
+## 🤖 AI & Computer Vision
+
+Future versions could integrate Artificial Intelligence and Computer Vision for:
+
+* Real eye tracking
+* Environment analysis
+* Object detection
+* Context understanding
+* Intelligent response generation
+* Personalized communication assistance
+
+---
+
+## 📱 Companion Application
+
+A future mobile or companion application could provide:
+
+* Accessibility settings
+* User preferences
+* Saved phrases
+* Communication history
+* Device configuration
+* Personalization
+
+---
+
+## ⚙️ Backend
+
+A future backend could be developed using technologies such as:
 
 ### Python + FastAPI
 
-A future backend could handle:
+Possible responsibilities include:
 
-- User accounts
-- Authentication
-- Data processing
-- APIs
-- User preferences
-- Database communication
-- Integration with intelligent services
-
----
-
-## AI & Computer Vision
-
-Future versions could integrate AI and Computer Vision for:
-
-- Real eye tracking
-- Environment analysis
-- Object detection
-- Context understanding
-- Intelligent response generation
+* User accounts
+* Authentication
+* API management
+* Data processing
+* User preferences
+* Database communication
+* Integration with intelligent services
 
 ---
 
-## Cloud & Database
+## ☁️ Cloud & Database
 
 A future production system could use secure cloud infrastructure for:
 
-- User accounts
-- Saved phrases
-- Preferences
-- Data synchronization
-- Application data
+* User accounts
+* Saved phrases
+* Preferences
+* Data synchronization
+* Application data
+* Secure service integration
 
 ---
 
@@ -232,289 +223,18 @@ A future production system could use secure cloud infrastructure for:
 
 The current version does **not** claim to provide:
 
-- Physical smart glasses
-- Real eye-tracking hardware
-- Production backend
-- Production AI system
-- Medical-grade functionality
-- Clinical validation
-- Guaranteed speech recognition across all browsers
-- Guaranteed Arabic speech output on every device
-- Production cloud infrastructure
-- Production-level security
-
-The prototype is intended to demonstrate the concept, interface,
-interaction model, and possible future direction.
-
---------
-# 🚀 How to Run the Project
-
-## Prerequisites
-
-Before running Eyecan, make sure you have:
-
-- Git
-- Node.js + npm
-- Visual Studio Code
-- A modern web browser
-- A working microphone if you want to test speech recognition
-
-Recommended browsers:
-
-- Google Chrome
-- Microsoft Edge
-- Another browser with Web Speech API support
-
-> Python is not required to run the current Eyecan prototype.
-> Python + FastAPI are part of the future backend vision.
-
----
-
-## 1. Clone the Repository
-
-Open **Command Prompt (CMD)** or a terminal.
-
-To open CMD on Windows:
-
-1. Press `Windows + R`.
-2. Type `cmd`.
-3. Press **Enter**.
-
-You can also search for **Command Prompt** from the Windows Start Menu.
-
----
-
-## 2. Choose Where to Save the Project
-
-For example, to save the project on your Desktop, type:
-
-`cd Desktop`
-
-Then press **Enter**.
-
-You can choose any folder you prefer.
-
----
-
-## 3. Clone the GitHub Repository
-
-Run:
-
-`git clone https://github.com/ramaalnajjarr2/Eyecan.git`
-
-Press **Enter** and wait until Git finishes downloading the project.
-
-A new folder named `Eyecan` will be created in the selected location.
-
----
-
-## 4. Open the Project Folder
-
-In CMD, type:
-
-`cd Eyecan`
-
-Press **Enter**.
-
-Then enter the Front-End folder:
-
-`cd frontend`
-
-Press **Enter**.
-
-You should now be inside the folder containing `package.json`.
-
----
-
-## 5. Open the Project in Visual Studio Code
-
-If the VS Code command is available, type:
-
-`code .`
-
-Then press **Enter**.
-
-The project should open automatically in Visual Studio Code.
-
-### If `code .` Does Not Work
-
-Open **Visual Studio Code** manually.
-
-Then:
-
-1. Click **File**.
-2. Select **Open Folder**.
-3. Find the `Eyecan` folder.
-4. Open the `frontend` folder.
-5. Select the `frontend` folder.
-6. Click **Select Folder**.
-
----
-
-## 6. Open the Terminal in VS Code
-
-Inside Visual Studio Code, go to:
-
-**Terminal → New Terminal**
-
-A terminal will appear at the bottom of VS Code.
-
-Make sure the terminal is inside:
-
-`Eyecan\frontend`
-
-The path should look similar to:
-
-`...\Eyecan\frontend>`
-
----
-
-## 7. Install Project Dependencies
-
-In the VS Code terminal, run:
-
-`npm install`
-
-Then press **Enter**.
-
-Wait until the installation finishes.
-
-This installs the packages required by the project.
-
-> `npm install` normally needs to be run only when setting up the project for
-> the first time or when the project's dependencies change.
-
----
-
-## 8. Start the Development Server
-
-After `npm install` finishes, run:
-
-`npm run dev`
-
-Then press **Enter**.
-
-Vite will start the development server.
-
-You should see an address similar to:
-
-`Local: http://localhost:5173/`
-
-The exact port may be different on your computer.
-
----
-
-## 9. Open Eyecan in Your Browser
-
-Copy the **Local** address shown in the terminal.
-
-For example:
-
-`http://localhost:5173/`
-
-Paste it into your modern web browser and press **Enter**.
-
-🎉 Eyecan should now be running.
-
-> Always use the exact Local address displayed by Vite if the port is different.
-
----
-
-## 10. Test the Microphone
-
-To test speech recognition:
-
-1. Open the **Smart Glasses Simulation**.
-2. Activate the microphone.
-3. The browser will ask for microphone permission.
-4. Select **Allow**.
-5. Speak clearly.
-6. The browser will attempt to recognize your speech.
-7. The recognized text will appear in the interface.
-8. Suggested responses may appear.
-
-A working microphone and browser support are required for this feature.
-
----
-
-## 11. Test Voice Output
-
-Eyecan uses the speech capabilities provided by the **browser and device**.
-
-The available voices may differ depending on:
-
-- Browser
-- Operating system
-- Installed voices
-- Device language settings
-
-The current prototype does **not** use a separate Google Text-to-Speech backend.
-
----
-
-## 🇸🇦 If Arabic Voice Does Not Work
-
-If Arabic text does not produce sound:
-
-### 1. Check the volume
-
-Make sure your computer is not muted.
-
-### 2. Try English
-
-Try an English phrase.
-
-If English produces sound but Arabic does not, the browser or device may not
-have a compatible Arabic speech voice available.
-
-### 3. Try another browser
-
-Try:
-
-- Google Chrome
-- Microsoft Edge
-
-### 4. Check Arabic voice availability
-
-Make sure an Arabic speech voice is available on your operating system and
-browser/device.
-
-### 5. Refresh the page
-
-After changing the language or voice settings, refresh the Eyecan page.
-
-> Arabic speech availability depends on the browser and device. If English
-> works while Arabic does not, this does not necessarily mean that the Eyecan
-> code is broken.
-
----
-
-## 🎙️ If Speech Recognition Does Not Work
-
-If the microphone does not recognize your speech:
-
-1. Make sure your microphone is connected.
-2. Make sure the browser has microphone permission.
-3. Check that the correct microphone is selected.
-4. Try Google Chrome or Microsoft Edge.
-5. Refresh the page.
-6. Speak clearly and close to the microphone.
-
-Speech recognition support can vary between browsers and devices.
-
----
-
-## 👁️ Eye Tracking Simulation
-
-The current prototype does **not** use physical eye-tracking hardware.
-
-The mouse is used to simulate eye gaze and dwell time.
-
-Mouse hover and configurable dwell time demonstrate how looking at an interface
-element could eventually trigger an action.
-
-In a future hardware implementation, the mouse simulation could be replaced with
-real eye-tracking technology.
+* Physical smart glasses
+* Real eye-tracking hardware
+* A production backend
+* A production AI system
+* Medical-grade functionality
+* Clinical validation
+* Guaranteed speech recognition across all browsers
+* Guaranteed Arabic speech output on every device
+* Production cloud infrastructure
+* Production-level security
+
+The prototype is intended to demonstrate the **concept, interface, interaction model, and possible future direction** of Eyecan.
 
 ---
 
@@ -523,14 +243,17 @@ real eye-tracking technology.
 ```text
 Eyecan
 │
-├── Assets
+├── assets
 │   ├── logo.png
+│   │
 │   ├── screenshots
 │   │   ├── home.png
 │   │   └── simulation.png
+│   │
 │   ├── documentation
 │   │   ├── Eyecan-Report-AR.pdf
 │   │   └── Eyecan-Report-EN.pdf
+│   │
 │   └── presentation
 │       └── Eyecan-Presentation.pptx
 │
@@ -545,22 +268,326 @@ Eyecan
 │
 ├── .gitignore
 └── README.md
+```
 
-------------
+---
+
+# 🚀 How to Run
+
+## Requirements
+
+Before running Eyecan, make sure you have:
+
+* **Git**
+* **Node.js and npm**
+* **Visual Studio Code**
+* A modern web browser
+* A working microphone if you want to test speech recognition
+
+### Recommended Browsers
+
+* Google Chrome
+* Microsoft Edge
+* Other browsers with Web Speech API support
+
+> **Note:** Python and FastAPI are not required to run the current prototype. They are part of the future backend vision.
+
+---
+
+## 1. Clone the Repository
+
+Open **Command Prompt (CMD)** or a terminal.
+
+On Windows, you can open CMD by:
+
+1. Pressing `Windows + R`
+2. Typing `cmd`
+3. Pressing **Enter**
+
+Then navigate to the location where you want to save the project.
+
+For example:
+
+```bash
+cd Desktop
+```
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ramaalnajjarr2/Eyecan.git
+```
+
+Then enter the project folder:
+
+```bash
+cd Eyecan
+```
+
+---
+
+## 2. Open the Front-End Folder
+
+The current Eyecan prototype is located inside the `frontend` folder.
+
+Run:
+
+```bash
+cd frontend
+```
+
+You should now be inside the folder containing:
+
+```text
+package.json
+```
+
+---
+
+## 3. Open the Project in Visual Studio Code
+
+If the VS Code command is available, run:
+
+```bash
+code .
+```
+
+If `code .` does not work:
+
+1. Open **Visual Studio Code**
+2. Select **File → Open Folder**
+3. Select the `frontend` folder inside the Eyecan project
+4. Click **Select Folder**
+
+---
+
+## 4. Open the VS Code Terminal
+
+In Visual Studio Code, select:
+
+```text
+Terminal → New Terminal
+```
+
+Make sure the terminal is inside:
+
+```text
+Eyecan\frontend
+```
+
+The path should look similar to:
+
+```text
+C:\Users\YourName\Desktop\Eyecan\frontend>
+```
+
+---
+
+## 5. Install Dependencies
+
+Run:
+
+```bash
+npm install
+```
+
+Wait until the installation finishes successfully.
+
+This installs all packages required by the project.
+
+> `npm install` normally needs to be run during the initial setup or whenever the project's dependencies change.
+
+---
+
+## 6. Start the Development Server
+
+Run:
+
+```bash
+npm run dev
+```
+
+Vite will start the development server.
+
+You should see something similar to:
+
+```text
+Local: http://localhost:5173/
+```
+
+The port number may be different on your computer.
+
+---
+
+## 7. Open Eyecan
+
+Copy the **Local** address displayed in the terminal.
+
+For example:
+
+```text
+http://localhost:5173/
+```
+
+Open it in your browser.
+
+🎉 **Eyecan is now running!**
+
+> Always use the exact Local address displayed by Vite if the port is different.
+
+---
+
+## 8. Test the Smart Glasses Simulation
+
+Inside Eyecan:
+
+1. Open the **Smart Glasses Simulation**
+2. Try the mouse-based gaze interaction
+3. Activate the microphone
+4. Allow microphone permission when requested
+5. Speak clearly
+6. Check the recognized text
+7. Explore the suggested responses
+8. Select a response
+9. Test the voice output
+10. Adjust the available interaction settings
+
+---
+
+## 🎙️ Testing Speech Recognition
+
+If speech recognition does not work:
+
+1. Make sure your microphone is connected.
+2. Make sure the browser has microphone permission.
+3. Check that the correct microphone is selected.
+4. Try Google Chrome or Microsoft Edge.
+5. Refresh the page.
+6. Speak clearly and close to the microphone.
+
+Speech recognition support may vary between browsers and devices.
+
+---
+
+## 🔊 Testing Voice Output
+
+Eyecan uses the speech capabilities provided by the browser and device.
+
+Available voices may differ depending on:
+
+* Browser
+* Operating system
+* Installed voices
+* Device language settings
+
+The current prototype does **not** use a separate Google Text-to-Speech backend.
+
+---
+
+## 🇸🇦 If Arabic Voice Output Does Not Work
+
+If Arabic text does not produce sound:
+
+1. Check that your computer is not muted.
+2. Try an English phrase.
+3. Try Google Chrome or Microsoft Edge.
+4. Check whether an Arabic speech voice is available on your operating system.
+5. Refresh the Eyecan page after changing language or voice settings.
+
+> Arabic speech availability depends on the browser and device. If English works while Arabic does not, this does not necessarily mean that there is an issue with the Eyecan code.
+
+---
+
+## 👁️ Gaze Interaction Simulation
+
+The current prototype does **not** use physical eye-tracking hardware.
+
+Instead, the mouse is used to simulate:
+
+* Eye gaze
+* Hover interaction
+* Dwell time
+* Interface selection
+
+This allows the project to demonstrate how gaze-based interaction could work before integrating real eye-tracking hardware.
+
+---
+
+# 📸 Screenshots
+
+The screenshots below provide a visual overview of the Eyecan prototype without requiring installation.
+
+## 🏠 Home Page
+
+<p align="center">
+  <img src="assets/screenshots/home.png" width="900" alt="Eyecan Home Page">
+</p>
+
+The home page introduces the Eyecan concept, its purpose, main features, technologies, and future vision.
+
+---
+
+## 👓 Smart Glasses Simulation
+
+<p align="center">
+  <img src="assets/screenshots/simulation.png" width="900" alt="Eyecan Smart Glasses Simulation">
+</p>
+
+The simulation demonstrates the interaction experience, including microphone input, speech recognition, suggested responses, mouse-based gaze simulation, and browser-based voice output.
+
+---
+
 # 📚 Documentation
 
-## 🇯🇴 Arabic Documentation
+Complete project documentation is included in this repository.
 
-📄 [Open Arabic Report](assets/documentation/Eyecan-Report-AR.pdf)
+The documentation covers the project concept, requirements, analysis, design, implementation, and future development.
+
+## 🇸🇦 Arabic Documentation
+
+📄 **[Open Arabic Documentation](assets/documentation/Eyecan-Report-AR.pdf)**
 
 ---
 
 ## 🇬🇧 English Documentation
 
-📄 [Open English Report](assets/documentation/Eyecan-Report-EN.pdf)
+📄 **[Open English Documentation](assets/documentation/Eyecan-Report-EN.pdf)**
 
 ---
 
-# 📎 Presentation
+# 🎤 Presentation
 
-🎤 [Open Eyecan Presentation](assets/presentation/Eyecan-Presentation.pptx)
+The project presentation is also included in the repository.
+
+📎 **[Open Eyecan Presentation](assets/presentation/Eyecan-Presentation.pptx)**
+
+---
+
+# 🌟 Project Vision
+
+Eyecan aims to explore how modern web technologies, gaze interaction, speech recognition, and intelligent systems could be combined to create alternative communication experiences.
+
+The current prototype represents the first step toward that vision.
+
+---
+
+# 👨‍💻 Project Team
+
+Developed as a university software engineering project.
+
+### Team Members
+
+* **Rama Alnajjar** — Full Stack Developer
+* **Maryam AlJalakh** — UI/UX Designer
+* **Aya Gharaibeh** — AI Engineer
+* **Najwa AlJulani** — Project Manager
+
+---
+
+# ❤️ Thank You
+
+Thank you for exploring **Eyecan**.
+
+We hope this prototype provides a clear look at our concept and demonstrates the potential of accessible, gaze-based communication technology.
+
+**Enjoy exploring Eyecan! 👓✨**
