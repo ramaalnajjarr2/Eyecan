@@ -1,7 +1,7 @@
 # 👓 Eyecan
 
 <p align="center">
-  <img src="Assets/logo.png" alt="Eyecan Logo" width="180">
+  <img src="assets/logo.png" alt="Eyecan Logo" width="180">
 </p>
 
 <h1 align="center">
@@ -545,21 +545,22 @@ Eyecan
 │
 ├── .gitignore
 └── README.md
+
 ------------
 # 📚 Documentation
 
 ## 🇯🇴 Arabic Documentation
 
-[Open Arabic Report](assets/documentation/Eyecan-Report-AR.pdf)
+📄 [Open Arabic Report](assets/documentation/Eyecan-Report-AR.pdf)
 
 ---
 
 ## 🇬🇧 English Documentation
 
-[Open English Report](assets/documentation/Eyecan-Report-EN.pdf)
+📄 [Open English Report](assets/documentation/Eyecan-Report-EN.pdf)
 
 ---
 
-# 🎤 Presentation
+# 📎 Presentation
 
-[Open Eyecan Presentation](assets/presentation/Eyecan-Presentation.pptx)
+🎤 [Open Eyecan Presentation](assets/presentation/Eyecan-Presentation.pptx)
